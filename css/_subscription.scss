@@ -1,0 +1,80 @@
+.section-subscription {
+    height: 40vh;
+    position: relative;
+
+    &-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 40vh;
+        &__title {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            h3 {
+                font-family: $lato;
+                font-size: 20px;
+                font-weight: lighter;
+                color: $yellow;
+            }
+            h1 {
+                font-family: $sans;
+                font-weight: bold;
+                color: #2C3722;
+                font-size: 50px;
+                margin-top: 18px;
+            }
+        }
+        &__form {
+            width: 620px;
+            height: 100px;
+            margin-top: 30px;
+            margin-left: 35px;
+            display: flex;
+            justify-content: flex-end;
+            &__a {
+                height: 49px;
+                width: 40px;
+                background: url('../img/Arrow_Button.png');
+                background-repeat: no-repeat;
+                background-size: contain;
+                position: absolute;
+                top: 54%;
+                left: 64%;
+            }
+            input {
+                width: 510px;
+                height: 38px;
+                border: 1px #d1d1d1 solid;
+                border-radius: 5px;
+                text-indent: 15px;
+                border-radius: 50px;
+                margin-left: 25px;
+                box-shadow: 0 3px 6px 0 rgba($color: #3D3636, $alpha: 0.35);
+                margin-right: 65px;
+            }
+        }
+        &__leaf {
+            background: url(../img/leaf.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 75px;
+            height: 91px;
+            position: absolute;
+            top: 20%;
+            left: 10%;
+        }
+        &__leaves {
+            background: url(../img/leaves.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 100px;
+            height: 116px;
+            position: absolute;
+            top: 40%;
+            right: 10%;
+        }
+    }
+}

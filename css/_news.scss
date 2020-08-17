@@ -1,0 +1,96 @@
+.section-news {
+    height: 90vh;
+    margin-top: 100px;
+
+    &-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 90vh;
+        &__title {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-right: 50px;
+            h3 {
+                font-family: $lato;
+                font-size: 20px;
+                font-weight: lighter;
+                color: $yellow;
+            }
+            h1 {
+                font-family: $sans;
+                font-weight: bold;
+                color: #2C3722;
+                font-size: 50px;
+                margin-top: 18px;
+            }
+        }
+        &__cards {
+            height: 400px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-left: 40px;
+            .card {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 370px;
+                height: 370px;
+                &-image {
+                    background: url('../img/shawarma.png');
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    width: 370px;
+                    height: 150px;
+                }
+                &-image-2 {
+                    background: url('../img/restaurant.png');
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    width: 370px;
+                    height: 150px;
+                }
+                &-image-3 {
+                    background: url('../img/lots_shawarms.png');
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    width: 370px;
+                    height: 150px;
+                }
+                &__footer {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    width: 370px;
+                    height: 120px;
+                    h2 {
+                        margin-top: 10px;
+                        font-family: $sans;
+                        font-size: 23px;
+                        color: #212529;
+                    }
+                    p {
+                        font-family: $poppins;
+                        font-size: 13px;
+                        color: #545454;
+                        width: 70%;
+                        margin-top: 10px;
+                    }
+                    .learn {
+                        color: $yellow;
+                        font-family: $poppins;
+                        font-size: 15px;
+                        text-decoration: none;
+                        margin-top: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

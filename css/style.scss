@@ -1,0 +1,19 @@
+@import './reset';
+@import './colors';
+@import './breakpoints';
+@import './text_setup';
+@import './header';
+@import './story';
+@import './reason';
+@import './browse';
+@import './history';
+@import './testimonials';
+@import './news';
+@import './subscription';
+@import './footer';
+
+html, body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    position: relative;
+}

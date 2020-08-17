@@ -1,0 +1,139 @@
+.section-footer {
+    height: 40vh;
+    background-color: #F8FBF5;
+    margin-top: 100px;
+	
+    &-wrapper {
+        height: 40vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        &__mint {
+            background: url('../img/mint.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 182px;
+            height: 157px;
+        }
+        &__figo {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            width: 400px;
+            margin-left: 20px;
+            &__logo {
+                background: url('../img/figo.png');
+                background-repeat: no-repeat;
+                background-size: contain;
+                width: 65px;
+                height: 50px;
+            }
+            p {
+                font-family: $sans;
+                font-size: 21px;
+                color: #585858;
+                width: 75%;
+            }
+            &__squares {
+                background: url('../img/Social_icons.png');
+                background-repeat: no-repeat;
+                background-size: contain;
+                width: 210px;
+                height: 30px;
+                margin-top: 15px;
+            }
+        }
+        &__menu {
+            width: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            margin-right: 90px;
+            &__logo {
+                h2 {
+                font-family: $sans;
+                color: $black;
+                font-weight: bold;
+                font-size: 20px;
+                width: 100%;
+                margin-right: 10px;
+                }
+            }
+            ul {
+                margin-top: 10px;
+                li {
+                    margin-top: 10px;
+                    font-family: $sans;
+                    font-size: 16px;
+                    color: #585858;
+                    cursor: pointer;
+                }
+            }
+        }
+        &__links {
+            width: 150px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            margin-right: 90px;
+            &__logo {
+                h2 {
+                font-family: $sans;
+                color: $black;
+                font-weight: bold;
+                font-size: 20px;
+                width: 100%;
+                margin-right: 10px;
+                }
+            }
+            ul {
+                margin-top: 10px;
+                li {
+                    margin-top: 10px;
+                    font-family: $sans;
+                    font-size: 16px;
+                    color: #585858;
+                    cursor: pointer;
+                }
+            }
+        }
+        &__contacts {
+            width: 150px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            margin-right: 20px;
+            &__logo {
+                h2 {
+                font-family: $sans;
+                color: $black;
+                font-weight: bold;
+                font-size: 20px;
+                width: 100%;
+                margin-right: 10px;
+                }
+            }
+            ul {
+                margin-top: 10px;
+                li {
+                    margin-top: 10px;
+                    font-family: $sans;
+                    font-size: 16px;
+                    color: #585858;
+                    cursor: pointer;
+                }
+            }
+        }
+        &__salad {
+            background: url('../img/salad.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 162px;
+            height: 115px;
+        }
+    }
+}

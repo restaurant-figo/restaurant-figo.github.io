@@ -1,0 +1,150 @@
+.section-testimonials {
+    height: 70vh;
+    position: relative;
+
+    &-wrapper {
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &__title {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            h3 {
+                font-family: $lato;
+                font-size: 20px;
+                font-weight: lighter;
+                color: $yellow;
+            }
+            h1 {
+                font-family: $sans;
+                font-weight: bold;
+                color: #2C3722;
+                font-size: 50px;
+                margin-top: 18px;
+            }
+        }
+        &__articles {
+            width: 100%;
+            height: 70%;
+            margin-top: 40px;
+            .article {
+                width: 360px;
+                height: 200px;
+                &-title {
+                    background-color: #fff;
+                    width: 360px;
+                    height: 80px;
+                    box-shadow: 0 3px 6px 0 rgba($color: #3D3636, $alpha: 0.35);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    p {
+                        font-size: 17px;
+                        font-family: $lato;
+                    }
+                }
+                &-subtitle {
+                    width: 360px;
+                    height: 170px;
+                    display: flex;
+                    margin-top: 10px;
+                    &-image {
+                        background: url('../img/user-1.png');
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        width: 50px;
+                        height: 50px;
+                    }
+                    &-image-2 {
+                        background: url('../img/user-2.png');
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        width: 50px;
+                        height: 50px;
+                    }
+                    &-image-3 {
+                        background: url('../img/user-3.png');
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        width: 50px;
+                        height: 50px;
+                    }
+                    &-image-4 {
+                        background: url('../img/user-4.png');
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        width: 50px;
+                        height: 50px;
+                    }
+                    &-image-5 {
+                        background: url('../img/user-5.png');
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        width: 50px;
+                        height: 50px;
+                    }
+                    &__text {
+                        display: flex;
+                        flex-direction: column;
+                        width: 100px;
+                        height: 170px;
+                        margin-left: 20px;
+                        h5 {
+                            color: #333333;
+                            font-family: $sans;
+                            font-size: 14px;
+                            width: 200px;
+                            margin-top: 10px;
+                        }
+                        h6 {
+                            font-family: $sans;
+                            font-size: 11px;
+                            width: 200px;
+                            font-weight: lighter;
+                            margin-top: 7px;
+                        }
+                    }
+                }
+            }
+        }
+        .article:nth-child(1) {
+            position: absolute;
+            top: 40%;
+            left: 10%;
+        }
+        .article:nth-child(2) {
+            position: absolute;
+            top: 25%;
+            left: 38%;
+        }
+        .article:nth-child(3) {
+            position: absolute;
+            top: 40%;
+            right: 10%;
+        }
+        .article:nth-child(4) {
+            position: absolute;
+            top: 70%;
+            left: 20%;
+        }
+        .article:nth-child(5) {
+            position: absolute;
+            top: 80%;
+            right: 27%;
+        }
+        &__leaf {
+            background: url('../img/bad_leaf.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 85px;
+            height: 101px;
+            position: absolute;
+            top: 10%;
+            right: 7%;
+        }
+    }
+}

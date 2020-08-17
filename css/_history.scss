@@ -1,0 +1,96 @@
+.section-history {
+    margin-top: 100px;
+    height: 90vh;
+    position: relative;
+
+    &-wrapper {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 90vh;
+        width: 100%;
+        &__herobox {
+            width: 50%;
+            height: 100%;
+            margin-right: 90px;
+            &__title {
+                width: 50%;
+                h3 {
+                    font-family: $lato;
+                    font-size: 20px;
+                    font-weight: lighter;
+                    color: $yellow;
+                }
+                h1 {
+                font-family: $sans;
+                font-weight: bold;
+                color: #2C3722;
+                font-size: 40px;
+                margin-bottom: 30px;
+                margin-top: 30px;
+                }
+            }
+            &__subtitle {
+                width: 80%;
+                .first {
+                    font-family: $poppins;
+                    font-size: 17px;
+                    color: #545454;
+                    font-weight: lighter;
+                }
+                .second {
+                    font-family: $poppins;
+                    font-size: 17px;
+                    color: #545454;
+                    margin-top: 30px;
+                    font-weight: lighter;
+                }
+            }
+            &__calltoaction {
+                margin-top: 60px;
+                a {
+                    background-color: $green;
+                    color: white;
+                    border-radius: 5px;
+                    font-family: $poppins;
+                    font-size: 14px;
+                    border: $green 5px solid;
+                    padding: 15px;
+                    text-decoration: none;
+
+                }
+            }
+        }
+        &__bg {
+            background: url('../img/BG.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 510px;
+            height: 480px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 0;
+            right: 6%;
+            &__burger {
+                background: url('../img/burger.png');
+                background-repeat: no-repeat;
+                background-size: contain;
+                width: 438px;
+                height: 438px;
+                margin-bottom: 50px;
+            }
+        }
+        &__leaves {
+            background: url('../img/bad_leaves.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 160px;
+            height: 117px;
+            position: absolute;
+            top: 0;
+            left: 7%;
+        }
+    }
+}

@@ -1,0 +1,107 @@
+.section-reason {
+    height: 60vh;
+    margin-top: 90px;
+    position: relative;
+
+    &-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 60vh;
+        &__title {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            h3 {
+                font-family: $lato;
+                font-size: 20px;
+                font-weight: lighter;
+                color: $yellow;
+            }
+            h1 {
+                font-family: $sans;
+                font-weight: bold;
+                color: #2C3722;
+                font-size: 40px;
+                margin-top: 25px;
+            }
+        }
+        &__cards {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+            margin-top: 70px;
+            .card {
+                width: 300px;
+                height: 300px;
+                background-color: #F8FBF5;
+                border: 1px #F8FBF5 solid;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                border-radius: 15px;
+                .card-image {
+                    background: url(../img/money.png);
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    width: 60px;
+                    height: 60px;
+                }
+                .card-image-2 {
+                    background: url(../img/bike.png);
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    width: 60px;
+                    height: 60px;
+                }
+                .card-image-3 {
+                    background: url(../img/Icon.png);
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    width: 60px;
+                    height: 60px;
+                }
+                &-footer {
+                    width: 300px;
+                    margin-top: 40px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    h2 {
+                        font-family: $sans;
+                        font-weight: bold;
+                        color: #2C3722;
+                        font-size: 26px;
+                    }
+                    p {
+                        margin-top: 30px;
+                        color: #868686;
+                        font-family: $lato;
+                        font-size: 20px;
+                        margin-left: 25px;
+                    }
+                }
+            }
+            .card:hover {
+                background-color: #FFFFFF;
+                border: 1px #707070 solid;
+                border-radius: 15px;
+            }
+        }
+        &__leaf {
+            background: url(../img/bad_leaf.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 80px;
+            height: 110px;
+            position: absolute;
+            top: 8%;
+            left: 72%;
+        }
+    }
+}
