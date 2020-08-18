@@ -2,6 +2,9 @@
     height: 60vh;
     margin-top: 90px;
     position: relative;
+    @include media('<=phone') {
+        margin-top: 160%;
+    }
 
     &-wrapper {
         display: flex;
@@ -34,6 +37,10 @@
             align-items: center;
             width: 100%;
             margin-top: 70px;
+            @include media('<=phone') {
+                display: flex;
+                flex-direction: column;
+            }
             .card {
                 width: 300px;
                 height: 300px;
@@ -102,6 +109,21 @@
             position: absolute;
             top: 8%;
             left: 72%;
+            @include media('<=phone') {
+                position: absolute;
+                top: -100%;
+                left: 72%;
+            }
+        }
+        .card:nth-child(2) {
+            @include media('<=phone') {
+                margin-top: 40px;
+            }
+        }
+        .card:nth-child(3) {
+            @include media('<=phone') {
+                margin-top: 40px;
+            }
         }
     }
 }

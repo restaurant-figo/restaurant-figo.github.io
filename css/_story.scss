@@ -7,7 +7,14 @@
         align-items: center;
         height: 90vh;
         width: 100%;
-        &__image {
+        @include media('<=phone') {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        &__cooker {
+            &__cook {
             background: url('../img/cooker.png');
             background-repeat: no-repeat;
             background-size: contain;
@@ -15,11 +22,30 @@
             width: 440px;
             margin-bottom: 5px;
             margin-left: 10%;
+            @include media('<=phone') {
+                background: url('../img/cooker.png');
+                background-repeat: no-repeat;
+                background-size: contain;
+                margin-top: 180px;
+                margin-right: 80px;
+                height: 250px;
+                width: 270px;
+            }
+            }
         }
         &__herobox {
             width: 50%;
             height: 70%;
             margin-top: 40px;
+            @include media('<=phone') {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                margin-bottom: 170px;
+                margin-top: 0;
+            }
             &__logo {
                 font-family: $lato;
                 font-size: 20px;
@@ -28,6 +54,10 @@
             }
             &__title {
                 width: 50%;
+                @include media('<=phone') {
+                    width: 400px;
+                    margin-left: 100px;
+                }
                 h1 {
                 font-family: $sans;
                 font-weight: bold;
@@ -39,11 +69,17 @@
             }
             &__subtitle {
                 width: 80%;
+                @include media('<=phone') {
+                    width: 300px;
+                }
                 .first {
                     font-family: $poppins;
                     font-size: 19px;
                     color: #545454;
                     font-weight: lighter;
+                    @include media('<=phone') {
+                        font-size: 10px;
+                    }
                 }
                 .second {
                     font-family: $poppins;
@@ -51,6 +87,9 @@
                     color: #545454;
                     margin-top: 30px;
                     font-weight: lighter;
+                    @include media('<=phone') {
+                        font-size: 10px;
+                    }
                 }
             }
             &__calltoaction {
@@ -77,6 +116,13 @@
             position: absolute;
             top: 60%;
             left: 2%;
+            @include media('<=phone') {
+                position: absolute;
+                top: 0;
+                left: 1%;
+                width: 30px;
+                height: 50px;
+            }
         }
     }
 }

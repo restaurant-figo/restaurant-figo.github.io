@@ -2,17 +2,31 @@
     margin-top: 100px;
     height: 90vh;
     position: relative;
-
+    @include media('<=phone') {
+        margin-top: 210%;
+        height: 100vh;
+    }
     &-wrapper {
         display: flex;
         justify-content: space-around;
         align-items: center;
         height: 90vh;
         width: 100%;
+        @include media('<=phone') {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
         &__herobox {
             width: 50%;
             height: 100%;
             margin-right: 90px;
+            @include media('<=phone') {
+                margin-top: 320px;
+              
+            }
             &__title {
                 width: 50%;
                 h3 {
@@ -20,6 +34,10 @@
                     font-size: 20px;
                     font-weight: lighter;
                     color: $yellow;
+                    @include media('<=phone') {
+                        width: 300px;
+                        margin-left: 50px;
+                    }
                 }
                 h1 {
                 font-family: $sans;
@@ -28,15 +46,26 @@
                 font-size: 40px;
                 margin-bottom: 30px;
                 margin-top: 30px;
+                @include media('<=phone') {
+                    font-size: 25px;
+                    width: 300px;
+                }
                 }
             }
             &__subtitle {
                 width: 80%;
+                @include media('<=phone') {
+                    width: 300px;
+                }
                 .first {
                     font-family: $poppins;
                     font-size: 17px;
                     color: #545454;
                     font-weight: lighter;
+                    @include media('<=phone') {
+                        font-size: 10px;
+                        margin-right: 25px;
+                    }
                 }
                 .second {
                     font-family: $poppins;
@@ -44,6 +73,10 @@
                     color: #545454;
                     margin-top: 30px;
                     font-weight: lighter;
+                    @include media('<=phone') {
+                        font-size: 10px;
+                        margin-right: 25px;
+                    }
                 }
             }
             &__calltoaction {
@@ -73,6 +106,10 @@
             position: absolute;
             top: 0;
             right: 6%;
+            @include media('<=phone') {
+                width: 350px;
+                height: 315px;
+            }
             &__burger {
                 background: url('../img/burger.png');
                 background-repeat: no-repeat;
@@ -80,6 +117,11 @@
                 width: 438px;
                 height: 438px;
                 margin-bottom: 50px;
+                @include media('<=phone') {
+                    width: 290px;
+                    height: 290px;
+                    margin-bottom: 8px;
+                }
             }
         }
         &__leaves {
@@ -91,6 +133,13 @@
             position: absolute;
             top: 0;
             left: 7%;
+            @include media('<=phone') {
+                position: absolute;
+                top: -10%;
+                left: 2%;
+                width: 110px;
+                height: 87px;
+            }
         }
     }
 }

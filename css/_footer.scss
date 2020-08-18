@@ -2,18 +2,34 @@
     height: 40vh;
     background-color: #F8FBF5;
     margin-top: 100px;
+    @include media('<=phone') {
+        height: 100vh;
+        position: relative;
+    }
 	
     &-wrapper {
         height: 40vh;
         display: flex;
         justify-content: space-around;
         align-items: center;
+        @include media('<=phone') {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
         &__mint {
             background: url('../img/mint.png');
             background-repeat: no-repeat;
             background-size: contain;
             width: 182px;
             height: 157px;
+            @include media('<=phone') {
+                position: absolute;
+                top: 48%;
+                left: 0;
+            }
         }
         &__figo {
             display: flex;
@@ -22,6 +38,10 @@
             align-items: flex-start;
             width: 400px;
             margin-left: 20px;
+            @include media('<=phone') {
+                margin-bottom: 90px;
+                margin-left: 40px;
+            }
             &__logo {
                 background: url('../img/figo.png');
                 background-repeat: no-repeat;
@@ -51,6 +71,13 @@
             justify-content: center;
             align-items: flex-start;
             margin-right: 90px;
+            @include media('<=phone') {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-right: 0;
+            }
             &__logo {
                 h2 {
                 font-family: $sans;
@@ -79,6 +106,14 @@
             justify-content: center;
             align-items: flex-start;
             margin-right: 90px;
+            @include media('<=phone') {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-top: 40px;
+                margin-right: 0;
+            }
             &__logo {
                 h2 {
                 font-family: $sans;
@@ -107,6 +142,14 @@
             justify-content: center;
             align-items: flex-start;
             margin-right: 20px;
+            @include media('<=phone') {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-top: 40px;
+                margin-right: 0;
+            }
             &__logo {
                 h2 {
                 font-family: $sans;
@@ -134,6 +177,11 @@
             background-size: contain;
             width: 162px;
             height: 115px;
+            @include media('<=phone') {
+                position: absolute;
+                top: 50%;
+                right: 0;
+            }
         }
     }
 }
