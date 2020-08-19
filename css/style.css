@@ -822,7 +822,7 @@ textarea {
 
 @media (max-width: 420px) {
   .section-header-wrapper__container__image {
-    margin-left: 200px;
+    margin-left: 170px;
     width: 550px;
     height: 550px;
   }
