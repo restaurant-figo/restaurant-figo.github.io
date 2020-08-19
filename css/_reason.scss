@@ -2,6 +2,9 @@
     height: 60vh;
     margin-top: 90px;
     position: relative;
+    @include media('<=tablet') {
+        margin-top: 88%;
+    }
     @include media('<=phone') {
         margin-top: 160%;
     }
@@ -37,6 +40,10 @@
             align-items: center;
             width: 100%;
             margin-top: 70px;
+            @include media('<=tablet') {
+                display: flex;
+                flex-direction: column;
+            }
             @include media('<=phone') {
                 display: flex;
                 flex-direction: column;
@@ -109,6 +116,10 @@
             position: absolute;
             top: 8%;
             left: 72%;
+            @include media('<=tablet') {
+                top: -60%;
+                left: 72%;
+            }
             @include media('<=phone') {
                 position: absolute;
                 top: -100%;
@@ -116,11 +127,17 @@
             }
         }
         .card:nth-child(2) {
+            @include media('<=tablet') {
+                margin-top: 40px;
+            }
             @include media('<=phone') {
                 margin-top: 40px;
             }
         }
         .card:nth-child(3) {
+            @include media('<=tablet') {
+                margin-top: 40px;
+            }
             @include media('<=phone') {
                 margin-top: 40px;
             }

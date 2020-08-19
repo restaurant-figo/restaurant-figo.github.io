@@ -1,12 +1,21 @@
 .section-story {
     height: 80vh;
     position: relative;
+    @include media('<=tablet') {
+        margin-top: 10%;
+    }
     &-wrapper {
         display: flex;
         justify-content: space-around;
         align-items: center;
         height: 90vh;
         width: 100%;
+        @include media('<=tablet') {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
         @include media('<=phone') {
             display: flex;
             flex-direction: column;
@@ -22,6 +31,16 @@
             width: 440px;
             margin-bottom: 5px;
             margin-left: 10%;
+            @include media('<=tablet') {
+                background: url('../img/cooker.png');
+                background-repeat: no-repeat;
+                background-size: contain;
+                margin-top: 180px;
+                margin-right: 80px;
+                height: 330px;
+                width: 330px;
+                margin-right: 150px;
+            }
             @include media('<=phone') {
                 background: url('../img/cooker.png');
                 background-repeat: no-repeat;
@@ -54,6 +73,9 @@
             }
             &__title {
                 width: 50%;
+                @include media('<=tablet') {
+                    width: 400px;
+                }
                 @include media('<=phone') {
                     width: 400px;
                     margin-left: 100px;
@@ -69,6 +91,9 @@
             }
             &__subtitle {
                 width: 80%;
+                @include media('<=tablet') {
+                    width: 300px;
+                }
                 @include media('<=phone') {
                     width: 300px;
                 }
@@ -77,6 +102,9 @@
                     font-size: 19px;
                     color: #545454;
                     font-weight: lighter;
+                    @include media('<=tablet') {
+                        width: 400px;
+                    }
                     @include media('<=phone') {
                         font-size: 10px;
                     }
@@ -87,6 +115,9 @@
                     color: #545454;
                     margin-top: 30px;
                     font-weight: lighter;
+                    @include media('<=tablet') {
+                        width: 400px;
+                    }
                     @include media('<=phone') {
                         font-size: 10px;
                     }
@@ -116,6 +147,10 @@
             position: absolute;
             top: 60%;
             left: 2%;
+            @include media('<=tablet') {
+                top: 30%;
+                left: 2%;
+            }
             @include media('<=phone') {
                 position: absolute;
                 top: 0;

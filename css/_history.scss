@@ -2,6 +2,9 @@
     margin-top: 100px;
     height: 90vh;
     position: relative;
+    @include media('<=tablet') {
+        margin-top: 100%;
+    }
     @include media('<=phone') {
         margin-top: 210%;
         height: 100vh;
@@ -25,7 +28,6 @@
             margin-right: 90px;
             @include media('<=phone') {
                 margin-top: 320px;
-              
             }
             &__title {
                 width: 50%;
