@@ -1937,6 +1937,7 @@ textarea {
 
 @media (max-width: 420px) {
   .section-history {
+    margin-top: 210%;
     height: 100vh;
   }
 }
@@ -2009,7 +2010,7 @@ textarea {
 
 @media (max-width: 420px) {
   .section-history-wrapper__herobox {
-    margin-top: 320px;
+    margin-right: 100px;
   }
 }
 
@@ -2080,6 +2081,7 @@ textarea {
   .section-history-wrapper__herobox__subtitle .first {
     font-size: 10px;
     margin-right: 25px;
+    width: 300px;
   }
 }
 
@@ -2101,6 +2103,7 @@ textarea {
   .section-history-wrapper__herobox__subtitle .second {
     font-size: 10px;
     margin-right: 25px;
+    width: 300px;
   }
 }
 
@@ -2153,6 +2156,8 @@ textarea {
   .section-history-wrapper__bg {
     width: 350px;
     height: 315px;
+    top: -15%;
+    left: 5%;
   }
 }
 
@@ -2195,7 +2200,7 @@ textarea {
 @media (max-width: 420px) {
   .section-history-wrapper__leaves {
     position: absolute;
-    top: -10%;
+    top: -25%;
     left: 2%;
     width: 110px;
     height: 87px;

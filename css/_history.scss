@@ -7,6 +7,7 @@
         height: 100vh;
     }
     @include media('<=phone') {
+        margin-top: 210%;
         height: 100vh;
     }
     &-wrapper {
@@ -40,7 +41,7 @@
                 margin-left: 40px;
             }
             @include media('<=phone') {
-                margin-top: 320px;
+                margin-right: 100px;
             }
             &__title {
                 width: 50%;
@@ -87,6 +88,7 @@
                     @include media('<=phone') {
                         font-size: 10px;
                         margin-right: 25px;
+                        width: 300px;
                     }
                 }
                 .second {
@@ -101,6 +103,7 @@
                     @include media('<=phone') {
                         font-size: 10px;
                         margin-right: 25px;
+                        width: 300px;
                     }
                 }
             }
@@ -141,6 +144,8 @@
             @include media('<=phone') {
                 width: 350px;
                 height: 315px;
+                top: -15%;
+                left: 5%;
             }
             &__burger {
                 background: url('../img/burger.png');
@@ -172,7 +177,7 @@
             left: 7%;
             @include media('<=phone') {
                 position: absolute;
-                top: -10%;
+                top: -25%;
                 left: 2%;
                 width: 110px;
                 height: 87px;
