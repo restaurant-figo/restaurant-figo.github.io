@@ -1,6 +1,9 @@
 .section-subscription {
     height: 40vh;
     position: relative;
+    @include media('<=tablet') {
+        margin-top: 50%;
+    }
     @include media('<=phone') {
         margin-top: 160%;
     }
@@ -44,6 +47,9 @@
             margin-left: 35px;
             display: flex;
             justify-content: flex-end;
+            @include media('<=tablet') {
+                margin-right: 10px;
+            }
             &__a {
                 height: 49px;
                 width: 40px;
@@ -53,6 +59,10 @@
                 position: absolute;
                 top: 53%;
                 left: 64%;
+                @include media('<=tablet') {
+                    top: 53%;
+                    left: 78%;
+                }
                 @include media('<=phone') {
                     top: 50%;
                     left: 83%;
@@ -69,6 +79,9 @@
                 margin-left: 25px;
                 box-shadow: 0 3px 6px 0 rgba($color: #3D3636, $alpha: 0.35);
                 margin-right: 65px;
+                @include media('<=tablet') {
+                    width: 510px;
+                }
                 @include media('<=phone') {
                     width: 320px;
                     height: 37px;
@@ -85,6 +98,10 @@
             position: absolute;
             top: 20%;
             left: 10%;
+            @include media('<=tablet') {
+                top: 0;
+                left: 3%;
+            }
             @include media('<=phone') {
                 top: 0;
                 left: 10%;
@@ -101,6 +118,10 @@
             position: absolute;
             top: 40%;
             right: 10%;
+            @include media('<=tablet') {
+                top: 50%;
+                right: 3%;
+            }
             @include media('<=phone') {
                 top: 60%;
                 right: 5%;

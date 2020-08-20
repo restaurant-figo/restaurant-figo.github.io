@@ -82,7 +82,10 @@
                     background-color: #EBEBEB;
                     margin-left: 7px;
                     margin-top: 20px;
-
+                    @include media('<=tablet') {
+                        margin-top: 90px;
+                        margin-left: 6px;
+                    }
                     @include media('<=phone') {
                         display: none;
                     }
@@ -98,7 +101,7 @@
                     top: 39%;
                     left: 5%;
                     @include media('<=tablet') {
-                        top: -15%;
+                        top: 4%;
                         left: 3%;
                     }
                     @include media('<=phone') {
@@ -109,6 +112,9 @@
                 ul {
                     margin-right: 90px;
                     margin-top: 15px;
+                    @include media('<=tablet') {
+                        margin-top: 105px;
+                    }
                     @include media('<=phone') {
                         display: none;
                     }
@@ -149,7 +155,7 @@
                     justify-content: center;
                     width: 80%;
                     height: 100vh;
-                    margin-top: 500px;
+                    margin-top: 560px;
                     margin-left: 50px;
                 }
                 @include media('<=phone') {

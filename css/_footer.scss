@@ -2,6 +2,10 @@
     height: 40vh;
     background-color: #F8FBF5;
     margin-top: 100px;
+    @include media('<=tablet') {
+        height: 80vh;
+        position: relative;
+    }
     @include media('<=phone') {
         height: 100vh;
         position: relative;
@@ -12,6 +16,13 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
+        @include media('<=tablet') {
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
         @include media('<=phone') {
             height: 100vh;
             display: flex;
@@ -25,6 +36,11 @@
             background-size: contain;
             width: 182px;
             height: 157px;
+            @include media('<=tablet') {
+                position: absolute;
+                top: 48%;
+                left: 0;
+            }
             @include media('<=phone') {
                 position: absolute;
                 top: 48%;
@@ -38,6 +54,9 @@
             align-items: flex-start;
             width: 400px;
             margin-left: 20px;
+            @include media('<=tablet') {
+                margin-left: 180px;
+            }
             @include media('<=phone') {
                 margin-bottom: 90px;
                 margin-left: 40px;
@@ -71,6 +90,10 @@
             justify-content: center;
             align-items: flex-start;
             margin-right: 90px;
+            @include media('<=tablet') {
+                margin-top: 40px;
+                margin-right: 50px;
+            }
             @include media('<=phone') {
                 display: flex;
                 flex-direction: column;
@@ -106,6 +129,10 @@
             justify-content: center;
             align-items: flex-start;
             margin-right: 90px;
+            @include media('<=tablet') {
+                margin-top: 40px;
+                margin-right: 0;
+            }
             @include media('<=phone') {
                 display: flex;
                 flex-direction: column;
@@ -142,6 +169,10 @@
             justify-content: center;
             align-items: flex-start;
             margin-right: 20px;
+            @include media('<=tablet') {
+                margin-top: 40px;
+                margin-right: 0;
+            }
             @include media('<=phone') {
                 display: flex;
                 flex-direction: column;
@@ -177,6 +208,11 @@
             background-size: contain;
             width: 162px;
             height: 115px;
+            @include media('<=tablet') {
+                position: absolute;
+                top: 50%;
+                right: 0;
+            }
             @include media('<=phone') {
                 position: absolute;
                 top: 50%;
