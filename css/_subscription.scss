@@ -55,7 +55,7 @@
                 left: 64%;
                 @include media('<=phone') {
                     top: 50%;
-                    left: 88%;
+                    left: 83%;
                 }
             }
             input {
@@ -72,7 +72,7 @@
                 @include media('<=phone') {
                     width: 320px;
                     height: 37px;
-                    margin-right: 150px;
+                    margin-right: 170px;
                 }
             }
         }

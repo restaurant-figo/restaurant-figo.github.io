@@ -1015,6 +1015,7 @@ textarea {
 @media (max-width: 420px) {
   .section-story-wrapper__herobox__subtitle .first {
     font-size: 10px;
+    width: 300px;
   }
 }
 
@@ -1035,6 +1036,7 @@ textarea {
 @media (max-width: 420px) {
   .section-story-wrapper__herobox__subtitle .second {
     font-size: 10px;
+    width: 300px;
   }
 }
 
@@ -2221,12 +2223,14 @@ textarea {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 5px 15px;
 }
 
 @media (max-width: 420px) {
   .section-testimonials-wrapper__articles .article-title {
     width: 360px;
     height: 80px;
+    padding: 5px 15px;
   }
 }
 
@@ -2684,7 +2688,7 @@ textarea {
 @media (max-width: 420px) {
   .section-subscription-wrapper__form__a {
     top: 50%;
-    left: 88%;
+    left: 83%;
   }
 }
 
@@ -2706,7 +2710,7 @@ textarea {
   .section-subscription-wrapper__form input {
     width: 320px;
     height: 37px;
-    margin-right: 150px;
+    margin-right: 170px;
   }
 }
 

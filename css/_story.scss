@@ -107,6 +107,7 @@
                     }
                     @include media('<=phone') {
                         font-size: 10px;
+                        width: 300px;
                     }
                 }
                 .second {
@@ -120,6 +121,7 @@
                     }
                     @include media('<=phone') {
                         font-size: 10px;
+                        width: 300px;
                     }
                 }
             }
